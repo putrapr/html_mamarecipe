@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="../../style/output.css">
+</head>
+<body>
+  <!-- Navbar Start -->
+  <header class="relative z-50">
+  <div class="flex items-center justify-between px-10 xl:px-24 h-28">
+    <div class="hidden md:flex gap-10 xl:gap-20 ms-7 xl:ms-0 text-sm text-[#2E266F] font-bold">
+      <a href="../landing-page">Home</a>
+      <a href="../add-recipe">Add Recipe</a>
+      <a href="../profile">Profile</a>
+    </div>
+
+    <button id="hamburger" name="hamburger" type="button" class="block md:hidden ">
+      <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+      <span class="hamburger-line transition duration-300 ease-in-out"></span>
+      <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+    </button>
+
+    <nav id="nav-menu" class="hidden absolute py-5 bg-white border shadow-xl rounded-lg max-w-[250px] w-full left-8 top-20 z-10">
+      <ul class="block">
+        <li class="group">
+          <a href="../landing-page" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Home</a>
+        </li>
+        <li class="group">
+          <a href="../add-recipe" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Add Recipe</a>
+        </li>
+        <li class="group">
+          <a href="../profile" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Profile</a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="../login" class="flex items-center gap-1">
+      <div>
+        <img src="../../../assets/img/landing-page/icon-user.svg" width="32" alt="icon-user" class="xl:w-10 border rounded-full shadow">
+      </div>
+      <p class="text-[#2E266F] text-sm">
+        Login
+      </p>  
+    </a>
+  </div>
+</header>
+<!-- Navbar End -->
+
+<!-- Photo Profile Start -->
+<section class="flex flex-col justify-center items-center">
+  <div class="w-36 relative flex justify-center">
+    <img src="../../../assets/img/profile/dp.jpg" alt="dp" class="w-32 rounded-full">
+    <button class="absolute bottom-0 right-0">
+      <img src="../../../assets/img/profile/icon-pencil.svg" alt="icon-pencil" class="w-5">
+    </button>
+  </div>
+  <p class="mt-8 font-bold text-xl px-10 border-b-2">Putra Prasetya</p>
+</section>
+<!-- Photo Profile End -->
+
+<div class="mb-40"></div>
+<!-- Trigger Tab Start -->
+<section>
+  <div class="w-full flex max-[370px]:justify-center border-b max-[370px]:ps-0 max-lg:ps-12 ps-28 pb-6 max-[530px]:gap-5 gap-20 max-[530px]:text-sm max-lg:text-base text-lg tracking-wide font-bold">
+    <button class="">My Recipe</button>
+    <button class=" text-[#666666]">Saved Recipe</button>
+    <button class=" text-[#666666]">Liked Recipe</button>
+  </div>
+</section>
+<!-- Trigger Tab End -->
+
+<div class="grid max-[639px]:grid-cols-1 max-lg:grid-cols-2 max-xl:grid-cols-3 grid-cols-4 my-10 max-lg:mx-12 mx-28 gap-6">
+  <div class="relative">
+    <img src="../../../assets/img/profile/1.svg" alt="img-1" class="w-full h-full object-cover rounded-md">
+    <div class="w-full absolute left-0 max-lg:bottom-2 bottom-5 bg-[rgba(0,0,0,.3)]">
+      <p class="text-white max-lg:text-lg text-xl px-5">Bomb Chicken</p>
+    </div>        
+  </div>
+
+  <div class="relative">
+    <img src="../../../assets/img/profile/2.svg" alt="img-2" class="w-full h-full object-cover rounded-md">
+    <div class="w-full absolute left-0 max-lg:bottom-2 bottom-5 bg-[rgba(0,0,0,.3)]">
+      <p class="text-white max-lg:text-lg text-xl px-5">Bananas Pancake</p>
+    </div>        
+  </div>
+
+  <div class="relative">
+    <img src="../../../assets/img/profile/3.svg" alt="img-2" class="w-full h-full object-cover rounded-md">
+    <div class="w-full absolute left-0 max-lg:bottom-2 bottom-5 bg-[rgba(0,0,0,.3)]">
+      <p class="text-white max-lg:text-lg text-xl px-5">Sugar Salmon</p>
+    </div>        
+  </div>
+  
+  <div class="relative">
+    <img src="../../../assets/img/profile/4.svg" alt="img-2" class="w-full h-full object-cover rounded-md">
+    <div class="w-full absolute left-0 max-lg:bottom-2 bottom-5 bg-[rgba(0,0,0,.3)]">
+      <p class="text-white max-lg:text-lg text-xl px-5">Indian Salad</p>
+    </div>        
+  </div>  
+</div>
+
+<div class="bg-primary w-full h-20 flex justify-center items-center gap-7 text-[#707070] text-sm">
+  <a href="#">Product</a>
+  <a href="#">Company</a>
+  <a href="#">Learn More</a>
+  <a href="#">Get In Touch</a>
+</div>
+
+<script src="../../script/nav.js"></script>
+</body>
+</html>

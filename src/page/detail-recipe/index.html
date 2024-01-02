@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Recipe</title>
+  <link rel="stylesheet" href="../../style/output.css">
+</head>
+<body>
+  <!-- Navbar Start -->
+  <header class="relative z-50">
+    <div class="flex items-center justify-between px-10 xl:px-24 h-32">
+      <div class="hidden md:flex gap-10 xl:gap-20 ms-7 xl:ms-0 text-sm text-[#2E266F] font-bold">
+        <a href="../landing-page">Home</a>
+        <a href="../add-recipe">Add Recipe</a>
+        <a href="../profile">Profile</a>
+      </div>
+  
+      <button id="hamburger" name="hamburger" type="button" class="block md:hidden ">
+        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+      </button>
+  
+      <nav id="nav-menu" class="hidden absolute py-5 bg-white border shadow-xl rounded-lg max-w-[250px] w-full left-8 top-20 z-10">
+        <ul class="block">
+          <li class="group">
+            <a href="../landing-page" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Home</a>
+          </li>
+          <li class="group">
+            <a href="../add-recipe" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Add Recipe</a>
+          </li>
+          <li class="group">
+            <a href="../profile" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Profile</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <a href="../login" class="flex items-center gap-1">
+        <div>
+          <img src="../../../assets/img/landing-page/icon-user.svg" width="32" alt="icon-user" class="xl:w-10 border rounded-full shadow">
+        </div>
+        <p class="text-[#2E266F] text-sm">
+          Login
+        </p>  
+      </a>
+    </div>
+  </header>
+  <!-- Navbar End -->
+    
+  <!-- Title Start -->
+  <section class="flex flex-col justify-start items-center max-sm:mt-14 mt-28 gap-14">
+    <h1 class="max-lg:text-5xl text-[3.5rem] text-[#2E266F] font-bold text-center mx-5">Loream Sandwich</h1>
+    <img src="../../../assets/img/detail-recipe/1.svg" alt="food" class="max-[400px]:w-[80%] w-[56%]">
+  </section>
+  <!-- Title End -->
+
+  <div class="max-sm:mx-[10%] mx-[15%]">
+    <!-- Ingredient Start -->
+    <section class="mt-20">
+      <h2 class="max-lg:text-3xl text-4xl font-bold text-[#3F3A3A] tracking-wide">Ingredients</h2>
+      <p class="max-lg:text-2xl text-3xl leading-10 mt-10">
+        - 2 Eggs
+        <br> - 2 Tbsp Mayonnaise
+        <br> - 3 Slices Bread
+        <br> - A Little Butter
+        <br> - ⅓ Carton Of Cress
+        <br> - 2-3 Slices Of Tomato Or A Lettuce Leaf
+        And A Slice Of Ham Or Cheese
+        <br> - Crisps , To Serve
+      </pc>
+    </section>
+    <!-- Ingredient End -->
+  
+    <!-- Video Start -->
+    <section class="mt-20">
+      <h2 class="text-[#3F3A3A] max-lg:text-3xl text-4xl font-bold tracking-wide">Video</h2>
+      <a href="../video-recipe" class="mt-9 max-sm:w-56 w-80 max-sm:h-14 h-20 bg-primary rounded-xl flex justify-center items-center">
+        <img src="../../../assets/img/detail-recipe/icon-play.svg" alt="icon-play">
+      </a>
+    </section>
+    <!-- Video End -->
+  
+    <!-- Comment Start -->
+    <section class="mt-28 flex flex-col max-sm:mx-0 mx-5 mb-44">
+      <textarea rows="9" cols="50" class="border bg-[#F6F5F4] rounded-lg p-7 font-bold text-[#666666] text-lg" placeholder="Comment :"></textarea>
+      <button class="w-80 h-12 rounded bg-primary self-center mt-7 text-xs text-white">Send</button>
+      <h2 class="text-[#3F3A3A] max-lg:text-3xl text-4xl font-bold tracking-wide mt-12 mb-10">Comment</h2>
+      <div class="flex max-sm:gap-3 gap-7">
+        <img src="../../../assets/img/detail-recipe/dp.jpg" alt="dp" class="w-12 h-12 rounded-full">
+        <div class="flex flex-col">
+          <p class="font-bold text-lg">Putra Prasetya</p>
+          <p class="text-lg">Nice Recipe. Simple And Delicious, Thankyou</p>
+        </div>
+      </div>  
+    </section>    
+    <!-- Comment End -->
+  </div>
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="w-full h-72 lg:h-96 xl:h-[34rem] bg-primary flex flex-col">
+      <div class="w-full h-4/5 flex flex-col justify-center items-center gap-4">
+        <h3 class="max-[400px]:text-3xl text-4xl xl:text-6xl text-[#2E266F]">Eat, Cook, Repeat</h3>
+        <p class="text-sm xl:text-xl text-[#707070]">Share your best recipe by uploading here !</p>
+      </div>
+      <div class="flex justify-center gap-4 xl:gap-6 text-xs text-[#707070]">
+        <a href="#">Product</a>
+        <a href="#">Company</a>
+        <a href="#">Learn more</a>
+        <a href="#">Get in touch</a>
+      </div>      
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <script src="../../script/nav.js"></script>
+</body>
+</html>

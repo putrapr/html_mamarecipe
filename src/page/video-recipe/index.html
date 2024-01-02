@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Recipe</title>
+  <link rel="stylesheet" href="../../style/output.css">
+</head>
+<body class="relative">
+  <!-- Navbar Start -->
+  <header class="relative z-50">
+    <div class="flex items-center justify-between px-10 xl:px-24 h-28">
+      <div class="hidden md:flex gap-10 xl:gap-20 ms-7 xl:ms-0 text-sm text-[#2E266F] font-bold">
+        <a href="../landing-page">Home</a>
+        <a href="../add-recipe">Add Recipe</a>
+        <a href="../profile">Profile</a>
+      </div>
+  
+      <button id="hamburger" name="hamburger" type="button" class="block md:hidden ">
+        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+      </button>
+  
+      <nav id="nav-menu" class="hidden absolute py-5 bg-white border shadow-xl rounded-lg max-w-[250px] w-full left-8 top-20 z-10">
+        <ul class="block">
+          <li class="group">
+            <a href="../landing-page" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Home</a>
+          </li>
+          <li class="group">
+            <a href="../add-recipe" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Add Recipe</a>
+          </li>
+          <li class="group">
+            <a href="../profile" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Profile</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <a href="../login" class="flex items-center gap-1">
+        <div>
+          <img src="../../../assets/img/landing-page/icon-user.svg" width="32" alt="icon-user" class="xl:w-10 border rounded-full shadow">
+        </div>
+        <p class="text-[#2E266F] text-sm">
+          Login
+        </p>  
+      </a>
+    </div>
+  </header>
+  <!-- Navbar End -->
+
+  <div class="w-[4%] h-full bg-primary absolute left-0 top-0"></div>
+
+  <div class="flex max-lg:flex-col max-sm:mx-[5%] max-md:mx-20 mx-40 gap-14">
+    <!-- Main Video Start -->
+    <section class="w-[74%] max-lg:w-full">
+      <img src="../../../assets/img/video-recipe/main.svg" alt="main-video">
+      <h3 class="mt-8 text-2xl font-bold">
+        Beef Steak with Curry Sauce - [Step 4] <br>
+        Cut the condiment and then mix it
+      </h3>
+      <p class="text-[#AAAAAA]">3 month ago</p>
+    </section>
+    <!-- Main Video End -->
+
+    <!-- Next Video Start -->
+    <aside class="w-[26%] max-lg:w-full">
+      <h5 class="font-bold text-xl ms-3 mb-5">Next</h5>
+      <div class="mb-8">        
+        <img src="../../../assets/img/video-recipe/1.svg" alt="video-1" class="w-60 max-lg:w-3/4">
+        <p class="text-sm mt-3 mb-1 font-bold">
+          Beef Steak with Curry Sauce - [Step 5] <br>
+          Saute condiments together until turn brown
+        </p>
+        <p class="text-xs text-[#AAAAAA]">HanaLohana - 3 month ago</p>
+      </div>
+      
+      <div class="mb-8">        
+        <img src="../../../assets/img/video-recipe/2.svg" alt="video-1" class="w-60 max-lg:w-3/4">
+        <p class="text-sm mt-3 mb-1 font-bold">
+          Beef Steak with Curry Sauce - [Step 6] <br>
+          Roast beef until it’s medium rare
+        </p>
+        <p class="text-xs text-[#AAAAAA]">HanaLohana - 3 month ago</p>
+      </div>
+
+      <div class="mb-8">        
+        <img src="../../../assets/img/video-recipe/3.svg" alt="video-1" class="w-60 max-lg:w-3/4">
+        <p class="text-sm mt-3 mb-1 font-bold">
+          Beef Steak with Curry Sauce - [Step 7] <br>
+          Roast beef until it’s medium rare
+        </p>
+        <p class="text-xs text-[#AAAAAA]">HanaLohana - 3 month ago</p>
+      </div>
+
+    </aside>
+    <!-- Next Video End -->
+  </div>
+
+  <script src="../../script/nav.js"></script>
+</body>
+</html>

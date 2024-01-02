@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="../../style/output.css">
+</head>
+<body>
+  <!-- Navbar Start -->
+  <header class="relative z-50">
+    <div class="flex items-center justify-between px-10 xl:px-24 h-28">
+      <div class="hidden md:flex gap-10 xl:gap-20 ms-7 xl:ms-0 text-sm text-[#2E266F] font-bold">
+        <a href="../landing-page">Home</a>
+        <a href="../add-recipe">Add Recipe</a>
+        <a href="../profile">Profile</a>
+      </div>
+
+      <button id="hamburger" name="hamburger" type="button" class="block md:hidden ">
+        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+      </button>
+
+      <nav id="nav-menu" class="hidden absolute py-5 bg-white border shadow-xl rounded-lg max-w-[250px] w-full left-8 top-20 z-10">
+        <ul class="block">
+          <li class="group">
+            <a href="../landing-page" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Home</a>
+          </li>
+          <li class="group">
+            <a href="../add-recipe" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Add Recipe</a>
+          </li>
+          <li class="group">
+            <a href="../profile" class="text-base text-gray-900 py-2 mx-8 flex group-hover:text-primary">Profile</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="../login" class="flex items-center gap-1">
+        <div>
+          <img src="../../../assets/img/landing-page/icon-user.svg" width="32" alt="icon-user" class="xl:w-10 border rounded-full shadow">
+        </div>
+        <p class="text-[#2E266F] text-sm">
+          Login
+        </p>  
+      </a>
+    </div>
+  </header>
+  <!-- Navbar End -->
+
+  <!-- Form Add Recipe Start -->
+  <form action="../profile" class="flex flex-col items-center max-[767px]:mx-[5%] mx-[16%] gap-10 mt-20 mb-20">
+    <label for="add-photo" class="bg-[#F6F5F4] w-full h-96 rounded-lg flex flex-col justify-center items-center gap-4 text-lg font-bold text-[#666666] cursor-pointer">
+      <img src="../../../assets/img/add-recipe/icon-addimage.svg" alt="icon-image" class="w-12">
+      <p>Add Photo</p>
+    </label>
+    <input type="file" id="add-photo" class="hidden"/>
+    <input type="text" class="bg-[#F6F5F4] w-full h-20 rounded-lg indent-10 text-lg placeholder:text-[#666666] placeholder:font-bold placeholder:tracking-wider" placeholder="Title"/>
+    <textarea cols="30" rows="10" class="bg-[#F6F5F4] w-full rounded-lg px-8 py-6 text-lg placeholder:text-[#666666] placeholder:font-bold placeholder:tracking-wider" placeholder="Ingredients"></textarea>
+    <input type="text" class="bg-[#F6F5F4] w-full h-20 rounded-lg indent-10 text-lg placeholder:text-[#666666] placeholder:font-bold placeholder:tracking-wider" placeholder="Video Link"/>
+    <button class="bg-primary w-80 h-12 rounded text-xs text-white mt-10">Post</button>
+  </form>
+  <!-- Form Add Recipe End -->
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="w-full h-72 lg:h-96 xl:h-[34rem] bg-primary flex flex-col">
+      <div class="w-full h-4/5 flex flex-col justify-center items-center gap-4">
+        <h3 class="max-sm:text-3xl text-4xl xl:text-6xl text-[#2E266F]">Eat, Cook, Repeat</h3>
+        <p class="text-sm xl:text-xl text-[#707070]">Share your best recipe by uploading here !</p>
+      </div>
+      <div class="flex justify-center gap-4 xl:gap-6 text-xs text-[#707070]">
+        <a href="#">Product</a>
+        <a href="#">Company</a>
+        <a href="#">Learn more</a>
+        <a href="#">Get in touch</a>
+      </div>      
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <script src="../../script/nav.js"></script>
+</body>
+</html>

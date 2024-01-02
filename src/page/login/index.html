@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../../style/output.css">
+</head>
+<body>
+  <div class="w-full flex 
+    max-sm:justify-center max-sm:items-center max-sm:h-screen max-sm:bg-[url('../../../assets/img/login/bg.svg')] max-sm:bg-cover max-sm:bg-center">
+    <div class="max-sm:hidden w-1/2 flex justify-center items-center h-screen bg-[url('../../../assets/img/login/bg.svg')] bg-cover bg-center">
+      <img src="../../../assets/img/login/logo.svg" width="20%" alt="logo" class=" mt-4 mb-4">
+    </div>
+  
+    <div class="w-1/2 flex flex-col justify-center items-center
+    max-sm:w-5/6 max-sm:bg-white max-sm:opacity-90 max-sm:rounded-md">
+      <h3 class="max-sm:hidden text-primary text-2xl mt-4 mb-4 font-bold">Welcome</h3>
+      <img src="../../../assets/img/login/logo-yellow.svg" width="20%" alt="logo" class="sm:hidden mt-4 mb-4">
+      <p class="text-[#8692A6] mb-6">Log in into your exiting account</p>
+        <form action="../landing-page" class="w-1/2 max-sm:w-4/5 max-lg:w-3/4  flex flex-col justify-start">
+          <label class="text-[#696F79] mb-1" for="email">Email</label>
+          <input type="text" class="w-full border border-[#8692A6] rounded p-3 mb-4 text-sm focus:drop-shadow-md  focus:outline-primary" id="email" placeholder="examplexxx@gmail.com">
+          
+          <label class="text-[#696F79] mb-1" for="password">Password</label>
+          <input type="text" class="w-full border border-[#8692A6] rounded p-3 mb-3 text-sm focus:drop-shadow-md focus:outline-primary" id="password" placeholder="Password">
+          
+          <div class="flex flex-row gap-x-3 mb-7">
+            <input type="checkbox" name="terms" id="cb-terms" class="accent-primary mb-0.5 w-4">
+            <label for="cb-terms" class="text-[#696F79]">I agree to terms & conditions</label>
+          </div>
+
+          <button type="submit" class="w-full bg-primary mb-3 rounded-md py-3 text-white">Log in</button>
+          
+          <div class="w-full flex justify-end">
+            <a href="#" class="text-xs text-[#999999]">Forgot Password ?</a>
+          </div>          
+        </form>
+        <p class="text-[#999999] text-sm mt-5 mb-5">Don’t have an account? 
+          <a href="../register" class="text-primary font-bold">Sign Up</a> 
+        </p>
+    </div>
+  </div>  
+</body>
+</html>
